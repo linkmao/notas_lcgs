@@ -10,34 +10,39 @@ DESCRIPCIÓN: -->
 	<meta charset="UTF-8"/>
 	<meta name ="author" content="Mauricio Rua"/>
 	<meta name = "keywords" content="Notas, Luis Carlos Galan Sarmiento, Sistema de evaluación"/>
+	<link rel= "stylesheet" type = "text/css" href="estilo.css"/>
 </head>
 
 
 <body>
-<h1> Determinación de las notas de la IE </h1>
-<p> Digite las 13 notas <p>
+<h1 class = "titulo"> Determinación de las notas de la IE </h1>
+<p class = "parrafo"> Nuestro sistema de evaluacion isntitucional tiene 13 valoraciones distribuidad en 3 competencias, 5 valoraciones cognitivas, 3 valoraciones estéticas y 5 valoraciones éticas.<p>
+<p class = "parrafo"> verifica tu valoración final en cada asignatura con este sencillo aplicativo.<p>
 
-<div>  <!-- Bloque de competencias cognitivas-->
-<input type ="text" id ="N1"/> 
-<input type ="text" id ="N2"/> 
-<input type ="text" id ="N3"/> 
-<input type ="text" id ="N4"/> 
+<div class ="general">
+
+<div class="capa_cognitiva">  <!-- Bloque de competencias cognitivas-->
+<input type ="text" id ="N1"/> </br>
+<input type ="text" id ="N2"/> </br>
+<input type ="text" id ="N3"/> </br>
+<input type ="text" id ="N4"/> </br>
 <input type ="text" id ="N5"/> 
 </div>
 
 
-<div>  <!-- Bloque de competencias estéticas-->
-<input type ="text" id ="N6"/> 
-<input type ="text" id ="N7"/> 
-<input type ="text" id ="N8"/> 
+<div class="capa_estetica">  <!-- Bloque de competencias estéticas-->
+<input type ="text" id ="N6"/> </br>
+<input type ="text" id ="N7"/> </br>
+<input type ="text" id ="N8"/> </br>
 </div>
 
-<div>  <!-- Bloque de competencias éticas-->
-<input type ="text" id ="N9"/> 
-<input type ="text" id ="N10"/> 
-<input type ="text" id ="N11"/> 
-<input type ="text" id ="N12"/> 
+<div class= "capa_etica">  <!-- Bloque de competencias éticas-->
+<input type ="text" id ="N9"/> </br>
+<input type ="text" id ="N10"/> </br>
+<input type ="text" id ="N11"/> </br>
+<input type ="text" id ="N12"/> </br>
 <input type ="text" id ="N13"/> 
+</div>
 </div>
 
 <input type ="button"  id ="boton" onclick="comprobar_numeros()"/>
@@ -49,6 +54,8 @@ DESCRIPCIÓN: -->
 
 
 <Script type="Text/javascript" src ="calculo.js"> </script>
+
+
 </body>
 
 

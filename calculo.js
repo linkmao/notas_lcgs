@@ -42,7 +42,7 @@ function comprobar_numeros(){
 	if (cantidad_textos>0)
       window.alert("No se puede continuar pues se detectan " + cantidad_textos + " celdas vacia o con valores no numéricos");		
       else
-      comprobar_rango();
+      comprobar_rango();	
 }
 
 // Funcion que devuelve true, si el valor digitado es numerico

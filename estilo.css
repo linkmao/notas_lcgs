@@ -1,0 +1,54 @@
+body{
+	background-color: #5DADE2  	;
+
+}
+
+}
+
+.titulo{
+	text-align: center;
+	font-family: "courier new";
+	color:blue;
+	
+}
+
+
+.parrafo{
+	text-align: center;
+	color:red;
+}	
+
+
+.general {
+	align-self: center;
+	width: 700px;
+	height: 300px;
+	border: 5px solid white;
+	text-align: center;
+}
+
+.capa_cognitiva{
+	float: left;
+	width: 200px;
+	height: 200px;
+	
+	border: 10px solid black;
+	
+}
+
+.capa_estetica{
+	display: 	inline-block;
+	width: 200px;
+	height: 200px;
+	
+	border: 10px solid black;
+}
+
+
+.capa_etica {
+			float:  right;
+width: 200px;
+	height: 200px;
+	
+	border: 10px solid black;
+}
