@@ -1,0 +1,52 @@
+<!--NACIMIENTO: 03 de agosto de 2020
+OBJETIVO: Calculo de la nota definitiva del sistema institucional de evaluacion de la IE
+DESCRIPCIÓN: -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>SIEP</title>
+	<meta charset="UTF-8"/>
+	<meta name ="author" content="Mauricio Rua"/>
+	<meta name = "keywords" content="Notas, Luis Carlos Galan Sarmiento, Sistema de evaluación"/>
+</head>
+
+
+<body>
+<h1> Determinación de las notas de la IE </h1>
+<p> Digite las 13 notas <p>
+
+<div>  <!-- Bloque de competencias cognitivas-->
+<input type ="text" id ="N1"/> 
+<input type ="text" id ="N2"/> 
+<input type ="text" id ="N3"/> 
+<input type ="text" id ="N4"/> 
+<input type ="text" id ="N5"/> 
+</div>
+
+
+<div>  <!-- Bloque de competencias estéticas-->
+<input type ="text" id ="N6"/> 
+<input type ="text" id ="N7"/> 
+<input type ="text" id ="N8"/> 
+</div>
+
+<div>  <!-- Bloque de competencias éticas-->
+<input type ="text" id ="N9"/> 
+<input type ="text" id ="N10"/> 
+<input type ="text" id ="N11"/> 
+<input type ="text" id ="N12"/> 
+<input type ="text" id ="N13"/> 
+</div>
+
+<input type ="button"  id ="boton" onclick="calculo()"/>
+
+<p id="resultado">Su nota total del final de curso: </p>
+
+
+<Script type="Text/javascript" src ="calculo.js"> </script>
+</body>
+
+
+</html>
