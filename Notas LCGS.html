@@ -15,42 +15,60 @@ DESCRIPCIÓN: -->
 
 
 <body>
-<h1 class = "titulo"> Determinación de las notas de la IE </h1>
-<p class = "parrafo"> Nuestro sistema de evaluacion isntitucional tiene 13 valoraciones distribuidad en 3 competencias, 5 valoraciones cognitivas, 3 valoraciones estéticas y 5 valoraciones éticas.<p>
-<p class = "parrafo"> verifica tu valoración final en cada asignatura con este sencillo aplicativo.<p>
+<h1 class = "titulo"> Determinación de notas definitiva de curso</h1>
+<p class = "parrafo"> Nuestro sistema de evaluación institucional tiene 13 valoraciones distribuidas en 3 competencias, 5 valoraciones para las competencias cognitivas, 3 valoraciones para las competencias estéticas y 5 valoraciones para las competencias éticas.<p>
+<p class = "parrafo"> verifica tu valoración final de cualquier asignatura con este sencillo aplicativo.<p>
 
-<div class ="general">
+<div class ="general"> 
 
 <div class="capa_cognitiva">  <!-- Bloque de competencias cognitivas-->
-<input type ="text" id ="N1"/> </br>
-<input type ="text" id ="N2"/> </br>
-<input type ="text" id ="N3"/> </br>
-<input type ="text" id ="N4"/> </br>
-<input type ="text" id ="N5"/> 
+<h2 class="titulo_competencia"> Competencias congnitivas </h2>
+<p class="competencia">C. Comunicativa</p> 
+<input type ="text" id ="N1" class="caja"/>  </br>
+<p class="competencia">C. Lógica</p>
+<input type ="text" id ="N2" class="caja"/>  </br>
+<p class="competencia">C. Aprender a aprender</p>
+<input type ="text" id ="N3" class="caja"/>  </br>
+<p class="competencia">C. Científica</p>
+<input type ="text" id ="N4" class="caja"/>  </br>
+<p class="competencia">C. Tecnológica</p>
+<input type ="text" id ="N5"  class="caja"/> 
 </div>
 
 
 <div class="capa_estetica">  <!-- Bloque de competencias estéticas-->
-<input type ="text" id ="N6"/> </br>
-<input type ="text" id ="N7"/> </br>
-<input type ="text" id ="N8"/> </br>
+<h2 class="titulo_competencia"> Competencias estéticas </h2>
+<p class="competencia">Trabajo autónomo</p>
+<input type ="text" id ="N6" class="caja"/> </br>
+<p class="competencia">Creatividad</p>
+<input type ="text" id ="N7" class="caja"/>  </br>
+<p class="competencia">Orden y presentación</p> 
+<input type ="text" id ="N8" class="caja"/> 
 </div>
 
 <div class= "capa_etica">  <!-- Bloque de competencias éticas-->
-<input type ="text" id ="N9"/> </br>
-<input type ="text" id ="N10"/> </br>
-<input type ="text" id ="N11"/> </br>
-<input type ="text" id ="N12"/> </br>
-<input type ="text" id ="N13"/> 
+<h2 class="titulo_competencia"> Competencias éticas </h2>
+<p class="competencia">Trabajo en equipo</p>
+<input type ="text" id ="N9" class="caja"/>  </br>
+<p class="competencia">Participación</p>
+<input type ="text" id ="N10" class="caja"/> </br>
+<p class="competencia">Responsabilidad</p>
+<input type ="text" id ="N11" class="caja"/> </br>
+<p class="competencia">Sentido de pertenencia</p>
+<input type ="text" id ="N12" class="caja"/> </br>
+<p class="competencia">Convivencia</p>
+<input type ="text" id ="N13" class="caja"/> 
 </div>
 </div>
 
-<input type ="button"  id ="boton" onclick="comprobar_numeros()"/>
+<div class="contenedor_boton">
+<input type ="button"    value="Determina tu nota" id ="boton" onclick="comprobar_numeros()"/>
+</div>
 
-<p id="rcog">Su nota cognitiva: </p>
-<p id="rest">Su nota estetica: </p>
-<p id="reti">Su nota etica: </p>
-<p id="resultado">Su nota total del final de curso: </p>
+<p id="rcog" class ="texto_resultado">Aporte de la valoración competencias cognitivas: </p>
+<p id="rest" class ="texto_resultado">Aporte de la valoración competencias estéticas </p>
+<p id="reti" class ="texto_resultado">Aporte de la valoracion competencias éticas: </p>
+<p id="resultado" class="texto_nota_total">Nota total del final de curso: </p>
 
 
 <Script type="Text/javascript" src ="calculo.js"> </script>
